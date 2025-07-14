@@ -7,6 +7,7 @@
 Example:
 
 name = "Alice"
+
 age = 25
 
 height = 5.7
@@ -48,27 +49,26 @@ float(x)	Converts to float
 str(x)	Converts to string
 bool(x)	Converts to boolean
 Examples:
-python
-CopyEdit
+``` python
 a = "123"
 b = int(a)     # "123" → 123
 
 x = 5
+
 y = float(x)   # 5 → 5.0
 
 z = str(x)     # 5 → "5"
-Note: Not all conversions are valid:
-python
-CopyEdit
-int("abc")  # Error
 
+Note: Not all conversions are valid:
+
+int("abc")  # Error
+```
 ### 5. Check Type and Size in Python
-python
-CopyEdit
+```python
 x = 100
 print(type(x))            # <class 'int'>
 print(sys.getsizeof(x))   # Memory size in bytes
-
+```
 Summary:
 * Python is dynamically typed, so size depends on the value and system.
 * On 64-bit machines, memory use is slightly higher.
