@@ -47,15 +47,13 @@ Note: Sizes include Python's object overhead and are approximate for 64-bit syst
 ### 4. Type Conversion (Casting)
 Convert data from one type to another using built-in functions:
 
-Function	Description
+| Function   | Description             |
+|------------|-------------------------|
+| int(x)     | Converts to integer     |
+| float(x)   | Converts to float       |
+| str(x)     | Converts to string      |
+| bool(x)    | Converts to boolean     |
 
-int(x)	Converts to integer
-
-float(x)	Converts to float
-
-str(x)	Converts to string
-
-bool(x)	Converts to boolean
 
 Examples:
 ``` python
