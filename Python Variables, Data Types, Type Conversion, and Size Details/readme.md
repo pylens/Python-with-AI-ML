@@ -8,7 +8,9 @@ Example:
 
 name = "Alice"
 age = 25
+
 height = 5.7
+
 * Variables are case-sensitive
 * Names should not start with a number
 
