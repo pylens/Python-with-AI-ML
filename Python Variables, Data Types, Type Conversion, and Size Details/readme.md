@@ -16,23 +16,17 @@ height = 5.7
 * Names should not start with a number
 
 ### 2. Common Data Types and Their Size (in Python)
-Data Type	Example	Description	Typical Size (64-bit)
+| Data Type | Example        | Description                   | Typical Size (64-bit)              |
+|-----------|----------------|-------------------------------|------------------------------------|
+| int       | x = 10000      | Whole numbers                 | At least 24–28 bytes               |
+| float     | y = 3.14       | Decimal numbers (floating point) | 24 bytes                        |
+| bool      | flag = True    | Boolean (True or False)       | 28 bytes                           |
+| str       | name = "Bob"   | Text / sequence of characters | 49 + length in bytes               |
+| list      | [1, 2, 3]      | Ordered mutable collection    | 64 bytes (base) + items            |
+| tuple     | (1, 2)         | Ordered immutable collection  | 48 bytes (base) + items            |
+| dict      | {"a": 1}       | Key-value pairs               | ~240+ bytes (depends)              |
+| set       | {1, 2}         | Unordered unique items        | ~232+ bytes                        |
 
-int	x = 10000	Whole numbers	At least 24–28 bytes
-
-float	y = 3.14	Decimal numbers (floating point)	24 bytes
-
-bool	flag = True	Boolean (True or False)	28 bytes
-
-str	name = "Bob"	Text / sequence of characters	49 + length in bytes
-
-list	[1, 2, 3]	Ordered mutable collection	64 bytes (base) + items
-
-tuple	(1, 2)	Ordered immutable collection	48 bytes (base) + items
-
-dict	{"a": 1}	Key-value pairs	~240+ bytes (depends)
-
-set	{1, 2}	Unordered unique items	~232+ bytes
 
 #### To check the size of an object in Python:
 ```python
