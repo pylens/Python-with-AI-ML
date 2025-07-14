@@ -17,21 +17,30 @@ height = 5.7
 
 ### 2. Common Data Types and Their Size (in Python)
 Data Type	Example	Description	Typical Size (64-bit)
+
 int	x = 10000	Whole numbers	At least 24–28 bytes
+
 float	y = 3.14	Decimal numbers (floating point)	24 bytes
+
 bool	flag = True	Boolean (True or False)	28 bytes
+
 str	name = "Bob"	Text / sequence of characters	49 + length in bytes
+
 list	[1, 2, 3]	Ordered mutable collection	64 bytes (base) + items
+
 tuple	(1, 2)	Ordered immutable collection	48 bytes (base) + items
+
 dict	{"a": 1}	Key-value pairs	~240+ bytes (depends)
+
 set	{1, 2}	Unordered unique items	~232+ bytes
+
 #### To check the size of an object in Python:
-python
-CopyEdit
+```python
 import sys
 print(sys.getsizeof(10))      # size of int
 print(sys.getsizeof(3.14))    # size of float
 print(sys.getsizeof("text"))  # size of str
+```
 Note: Sizes include Python's object overhead and are approximate for 64-bit systems.
 
 ### 3. Platform and Architecture Differences (32-bit vs 64-bit)
@@ -43,11 +52,17 @@ Note: Sizes include Python's object overhead and are approximate for 64-bit syst
 
 ### 4. Type Conversion (Casting)
 Convert data from one type to another using built-in functions:
+
 Function	Description
+
 int(x)	Converts to integer
+
 float(x)	Converts to float
+
 str(x)	Converts to string
+
 bool(x)	Converts to boolean
+
 Examples:
 ``` python
 a = "123"
