@@ -16,7 +16,7 @@ height = 5.7
 * Names should not start with a number
 
 ### 2. Common Data Types and Their Size (in Python)
-| Data Type | Example        | Description                   | Typical Size (64-bit)              |
+| ** Data Type ** | Example        | Description                   | Typical Size (64-bit)              |
 |-----------|----------------|-------------------------------|------------------------------------|
 | int       | x = 10000      | Whole numbers                 | At least 24–28 bytes               |
 | float     | y = 3.14       | Decimal numbers (floating point) | 24 bytes                        |
