@@ -1,4 +1,4 @@
-##Python Variables, Data Types, Type Conversion, and Size Details
+## Python Variables, Data Types, Type Conversion, and Size Details
 
 ### 1. Variables in Python
 * A variable stores data in memory.
