@@ -103,7 +103,7 @@ Limitations:
 Cannot implicitly convert between incompatible types (e.g., str and int)
 May result in unintended data types if not handled carefully
 
-2. Explicit Type Conversion (Type Casting)
+### 2. Explicit Type Conversion (Type Casting)
 Done manually using built-in functions such as int(), float(), str(), bool(), list(), tuple(), etc.
 
 Useful when converting between types that do not automatically convert
@@ -131,14 +131,14 @@ list("abc") → converts string to list of characters
 - int(3+4j) raises TypeError because complex numbers cannot be converted to int or float
 - bool() may return False for values like 0, None, '', [], {}, even though they are not literally False
   
-3. Data Type Sizes and Limits (on a 64-bit system)
+### 3. Data Type Sizes and Limits (on a 64-bit system)
    
 - int: Arbitrary size, limited only by available memory
 - float: 64-bit (IEEE 754), approximately ±1.8 × 10³⁰⁸
 - bool: Uses 1 byte, represents True or False
 - str, list, dict, etc.: Dynamically sized, limited by system memory
   
-5. Key Limitations and Caveats
+### 4. Key Limitations and Caveats
 - Precision loss when converting large integers to float
 - Float to int conversion discards fractional part
 - No direct conversion from complex to int or float
