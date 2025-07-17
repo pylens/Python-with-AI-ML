@@ -81,3 +81,66 @@ Summary:
 * On 64-bit machines, memory use is slightly higher.
 * Use sys.getsizeof() for actual memory usage.
 * Unlike C/C++, Python int and float do not have strict size limits.
+
+
+## Python Type Conversion – Rules and Limitations
+
+### 1. Implicit Type Conversion
+Python automatically converts a variable from one data type to another during operations when needed.
+It only happens between compatible types to prevent data loss.
+
+Usually converts from lower precision to higher precision types (e.g., int to float).
+Rules:
+
+int + float results in float
+
+int + complex results in complex
+
+float + complex results in complex
+
+Limitations:
+
+Cannot implicitly convert between incompatible types (e.g., str and int)
+May result in unintended data types if not handled carefully
+
+2. Explicit Type Conversion (Type Casting)
+Done manually using built-in functions such as int(), float(), str(), bool(), list(), tuple(), etc.
+
+Useful when converting between types that do not automatically convert
+
+**Common Conversions:**
+
+int("123") → converts numeric string to integer
+float("3.14") → converts string to float
+str(100) → converts number to string
+bool(0) → converts to False, non-zero numbers convert to True
+list("abc") → converts string to list of characters
+
+**Rules:**
+
+- The value must be in a format that the target type can interpret
+
+- Strings must contain only valid numeric characters when converting to int or float
+- Converting from float to int truncates the decimal part
+  
+**Limitations:**
+
+- int("abc") raises ValueError because the string is not numeric
+- int(3.9) returns 3, not 4 (it truncates, not rounds)
+- float("3.14.15") raises ValueError due to invalid format
+- int(3+4j) raises TypeError because complex numbers cannot be converted to int or float
+- bool() may return False for values like 0, None, '', [], {}, even though they are not literally False
+  
+3. Data Type Sizes and Limits (on a 64-bit system)
+   
+- int: Arbitrary size, limited only by available memory
+- float: 64-bit (IEEE 754), approximately ±1.8 × 10³⁰⁸
+- bool: Uses 1 byte, represents True or False
+- str, list, dict, etc.: Dynamically sized, limited by system memory
+  
+5. Key Limitations and Caveats
+- Precision loss when converting large integers to float
+- Float to int conversion discards fractional part
+- No direct conversion from complex to int or float
+- Always ensure proper format before converting from string
+- Implicit conversions can sometimes lead to unexpected data types in operations
