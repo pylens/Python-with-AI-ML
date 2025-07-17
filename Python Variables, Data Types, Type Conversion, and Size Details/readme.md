@@ -111,9 +111,13 @@ Useful when converting between types that do not automatically convert
 **Common Conversions:**
 
 int("123") → converts numeric string to integer
+
 float("3.14") → converts string to float
+
 str(100) → converts number to string
+
 bool(0) → converts to False, non-zero numbers convert to True
+
 list("abc") → converts string to list of characters
 
 **Rules:**
