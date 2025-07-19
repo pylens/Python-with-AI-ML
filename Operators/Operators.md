@@ -315,7 +315,7 @@ Bitwise operators operate on integers at the **bit level**. They perform operati
 | Operator | Name           | Description                                                        | Example           | Result     |
 |----------|----------------|--------------------------------------------------------------------|-------------------|------------|
 | `&`      | AND            | Sets each bit to 1 if both bits are 1                              | `5 & 3`           | `1`        |
-| `|`      | OR             | Sets each bit to 1 if one of two bits is 1                         | `5 | 3`           | `7`        |
+|  |      | OR             | Sets each bit to 1 if one of two bits is 1                         | 5 | 3           | `7`        |
 | `^`      | XOR            | Sets each bit to 1 if only one of two bits is 1                    | `5 ^ 3`           | `6`        |
 | `~`      | NOT            | Inverts all the bits (1's complement)                              | `~5`              | `-6`       |
 | `<<`     | Left Shift     | Shifts bits to the left and adds 0s on the right                   | `5 << 1`          | `10`       |
