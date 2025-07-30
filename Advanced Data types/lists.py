@@ -20,7 +20,7 @@ print(f"after deletion elemetns are : {items}")
 # list constructor is written as list()
 clist = list(("harish", "elecrtical engineer", 80000))
 print(clist)
-
+ 
 
 # access list elements
 print(items[0:3]) # in index range the last element is excluded
@@ -45,4 +45,44 @@ clist.insert(2, "0")
 print(clist)
 
 
+# removing elements from list
+# 1. remove() : it will remove the first occurrence of the element
+print(items)
+items.remove('delta')
+print(f"items after removing using remove : {items}")
 
+# 2. pop(): it will remove the element at specific index position
+items.pop()
+print(f"items after removing using pop: {items}")
+items.append('100')
+# 3. del: it will remove the element at specific index position
+del items[2]
+print(f"items after removing using del: {items}")
+
+# del items
+# print(items)
+
+# items.clear()
+# print(items)
+
+# sort: it will sort the list in ascending order or descending
+
+items.sort(reverse=True)
+
+print(f"after sorting: {items}")
+
+# adding or joining two or more lists
+
+items2 = [2,4,5,6]
+
+# direct concatination
+# itemsRes=items + items2
+# print(itemsRes)
+
+# extends()
+items.extend(items2)
+print(items)
+print(items2)
+
+items.reverse()
+print(items)
