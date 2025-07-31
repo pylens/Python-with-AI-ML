@@ -92,3 +92,77 @@ evens = [x for x in range(10) if x % 2 == 0]
 * You can store, modify, and manipulate any type of data.
 * Methods like `append`, `extend`, `sort`, and `pop` make lists highly functional.
 
+
+---
+---
+---
+
+
+## <center> List Exercises (Practice Only – No Answers)</center>
+
+### 1. Create and Access
+- Create a list with at least 6 different elements (mix of int, str, and float).
+- Access and print the 2nd and 5th elements using indexing.
+
+---
+
+### 2. List Slicing
+- Slice the list to get a sublist of the middle 3 elements.
+- Reverse the list using slicing.
+
+---
+
+### 3. Add and Remove Elements
+- Add an element to the end of the list using `append()`.
+- Insert an element at the second position.
+- Remove a specific element by value.
+- Remove the last element using `pop()`.
+
+---
+
+### 4. Sorting and Reversing
+- Sort a list of numbers in ascending order.
+- Reverse the sorted list.
+
+---
+
+### 5. Counting and Indexing
+- Count how many times a specific item appears in the list.
+- Find the index of the first occurrence of a given item.
+
+---
+
+### 6. Extend vs Append
+- Use `append()` to add a list to another list.
+- Use `extend()` to merge two lists.
+- What’s the difference in the result?
+
+---
+
+### 7. List Comprehension
+- Use list comprehension to create a list of squares from 1 to 10.
+- Use list comprehension to filter out odd numbers from a list.
+
+---
+
+### 8. Copying Lists
+- Create a shallow copy of a list using `copy()`.
+- Prove that modifying the new list does not affect the original.
+
+---
+
+### 9. Nested Lists
+- Create a 2D list (a list of lists) representing a 3x3 matrix.
+- Access the middle element of the matrix.
+- Change the value of the bottom-right element.
+
+---
+
+### 10. Looping
+- Loop through a list and print each item with its index.
+- Sum all numeric values in a list using a loop.
+
+
+```
+Create a github repo with the above exercises and commit the code with a meaningful commit message and share the url of the repo on the form that will be send saturday.
+```
