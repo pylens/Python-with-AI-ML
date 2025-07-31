@@ -92,11 +92,3 @@ evens = [x for x in range(10) if x % 2 == 0]
 * You can store, modify, and manipulate any type of data.
 * Methods like `append`, `extend`, `sort`, and `pop` make lists highly functional.
 
-```
-
----
-
-You can copy this entire block into your markdown notes — it will render perfectly.
-
-Let me know the next topic you want: **tuples**, **sets**, **dicts**, or maybe even **NumPy arrays vs lists**?
-```
