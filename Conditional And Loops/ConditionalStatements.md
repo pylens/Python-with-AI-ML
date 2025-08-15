@@ -222,7 +222,7 @@ Checking if a book is in a library’s catalog.
 
 ## Assignment — Conditional Statements (No Loops)
 
-```markdown
+
 1. **Simple `if`**:  
    Store your age in a variable. If it’s 18 or above, print "Adult".
 
@@ -246,5 +246,5 @@ Checking if a book is in a library’s catalog.
 
 7. **`in` / `not in`**:  
    Create a list of three colors. If `"red"` is in the list, print `"Red available"`. If `"green"` is not in the list, print `"Green not available"`.
-```
+
 
